@@ -10,8 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery-3.3.1.min
+//= require jquery
+//= require jquery_ujs
 //= require bootstrap.min
+//= require toastr
 //= require jquery.magnific-popup.min.js
 //= require jquery-ui.min
 //= require jquery.countdown.min

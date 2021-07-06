@@ -4,7 +4,9 @@
         <div class="row">
             <div class="col-xl-3 col-lg-2">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <%= link_to root_path do %>
+                      <%= image_tag 'logo.png' %>
+                    <% end %>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-7">
@@ -13,7 +15,7 @@
                         <li class="active"><a href="./index.html">Home</a></li>
                         <li><a href="#">Women’s</a></li>
                         <li><a href="#">Men’s</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
+                        <li> <%= link_to 'Shop', shop_path %> </li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="./product-details.html">Product Details</a></li>
@@ -38,9 +40,12 @@
                         <li><a href="#"><span class="icon_heart_alt"></span>
                             <div class="tip">2</div>
                         </a></li>
-                        <li><a href="#"><span class="icon_bag_alt"></span>
-                            <div class="tip">2</div>
-                        </a></li>
+                        <li>
+                          <%= link_to @cart do %>
+                            <span class="icon_bag_alt"></span>
+                            <div class="tip"><%= @cart.total_quantity %></div>
+                          <% end %>
+                        </li>
                     </ul>
                 </div>
             </div>

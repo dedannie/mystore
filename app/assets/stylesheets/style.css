@@ -2069,6 +2069,19 @@ ol {
   Shop Cart
 -----------------------*/
 
+.btn-cart {
+	display: inline-block;
+	font-size: 14px;
+	color: #ffffff;
+	background: #ca1515;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 14px 30px 15px;
+	border-radius: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .shop-cart {
 	padding-top: 70px;
 	padding-bottom: 90px;
