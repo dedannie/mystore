@@ -133,9 +133,9 @@ ol {
 }
 
 .set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: top center !important;
 }
 
 .spad {

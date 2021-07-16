@@ -76,7 +76,7 @@
                         <li>Subtotal <span><%= number_to_currency @cart.total_price %></span></li>
                         <li>Total <span><%= number_to_currency @cart.total_price %></span></li>
                     </ul>
-                    <a href="#" class="primary-btn">Proceed to checkout</a>
+                    <%= link_to 'Proceed to checkout', new_order_path, method: :get, class: "primary-btn" %>
                 </div>
             </div>
         </div>
